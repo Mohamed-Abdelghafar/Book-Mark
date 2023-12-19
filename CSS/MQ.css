@@ -1,0 +1,31 @@
+@media screen and (max-width:500px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .one,.two,.three {
+        width: 15px;
+        height: 15px;
+    }
+    .sub-button {
+        border-bottom: 1px dotted black;
+    }
+    .modal-body{
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .modal-foot {
+        font-size: 16px;
+    }
+    th  , tr td {
+        font-size: 14px;
+    }
+    table tbody button {
+        font-size: 16px;
+        padding: 5px 7px;
+        border-radius: 10px;
+        transition: 0.4s;
+    }
+}

@@ -1,0 +1,124 @@
+:root {
+    --main-Color:#FEC260;
+}
+::selection{
+    background-color:var(--main-Color) ;
+}
+body {
+    background-color: #F7ECDE;
+    font-family: 'PT Sans Caption', sans-serif;
+    color: #212529;
+}
+h1 {
+    width: fit-content;
+    font-family: 'Pacifico', cursive;
+    position: relative;
+    z-index: 2;
+    font-size:50px;
+    color:#352E28;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-color: var(--main-Color);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.4s;
+}
+h1:hover::after{
+    height: 65%;
+}
+.main-h2 {
+    border-top: 2px dotted black;
+}
+h2 {
+    font-size:25px;
+    font-family: 'Righteous', sans-serif;
+    width: fit-content;
+    background-image: linear-gradient( to right, #40A55B , #B2AC4A );   
+    background-clip: text;
+    color: transparent;
+    
+}
+.mark-1 {
+    color: #40A55B;
+}
+.mark-2 {
+    color: #B2AC4A;
+}
+
+.one {
+    background-color: #F15F5D;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.two {
+    background-color: #FEBE2E;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.three {
+    background-color: #4DB748;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.visit-button{
+    background-color:#a6be2a ;
+    transition: 0.5s;
+}
+.visit-button:hover {
+    background-color: #8a9e23;
+    color: white;
+    outline:  black;
+}
+.sub-button {
+    border-bottom: 2px dotted black;
+}
+.sub-button button {
+    background-color: #cf4923;
+    transition: 0.4s;
+}
+.sub-button button:hover {
+    background-color: #BB4120;
+}
+label {
+    font-weight:600
+}
+.layer {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+.modal-body{
+    font-size: 21px;
+    font-weight: 400;
+}
+.modal-foot {
+    font-size: 18px;
+}
+.modal-foot i{
+    color: #BB4120;
+}
+
+table tbody button {
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.delete-button {
+    background-color: #EB1D36;
+    color: white;
+}
+.delete-button:hover {
+    background-color: #D30820;
+}
