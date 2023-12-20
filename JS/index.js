@@ -11,7 +11,7 @@ if (localStorage.getItem("siteData") != null) {
 display()
 function add() {
      if (validationName() == true && validationUrl() == true ){
-        if(siteUrl.value.includes("https" || "http" || "ftp" && '://' )){
+        if(siteUrl.value.includes(("https" || "http" || "ftp") && '://' )){
             var site = {
                 name : siteName.value,
                 url : siteUrl.value
@@ -21,9 +21,9 @@ function add() {
         else {
             var site = {
                 name : siteName.value,
-                url : "https://www."+siteUrl.value
+                url : "https://"+siteUrl.value
             }
-            siteUrl.value = "https://www."+siteUrl.value
+            siteUrl.value = "https://"+siteUrl.value
         }
         container.push(site)
         localStorage.setItem("siteData" , JSON.stringify(container))
@@ -100,7 +100,7 @@ function validationName() {
 }
 function validationUrl() {
     var text = siteUrl.value ; 
-    var regexName = /^((https|http|ftp):\/\/www\.)?[A-z]{3,50}\.[A-z]{2,3}\/?$/i
+    var regexName = /^(https:|http:|ftp:)?(\/\/)?(www\.)?[A-z]{3,50}\.[A-z]{2,3}\/?$/i
     if (regexName.test(text) == true) {
         siteUrl.classList.add("is-valid")
         siteUrl.classList.remove("is-invalid")
