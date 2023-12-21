@@ -100,7 +100,7 @@ function validationName() {
 }
 function validationUrl() {
     var text = siteUrl.value ; 
-    var regexName = /^(https:\/\/|http:\/\/|ftp:\/\/)?(www\.)?[\w]{3,50}\.[A-z]{2,3}\/?$/i
+    var regexName = /^(https:\/\/|http:\/\/|ftp:\/\/)?(www\.)?[\w]{3,50}\.[A-z]{2,}\/?$/i
     if (regexName.test(text) == true) {
         siteUrl.classList.add("is-valid")
         siteUrl.classList.remove("is-invalid")
